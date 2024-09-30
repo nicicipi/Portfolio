@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Rufina:wght@400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    min-height: 700px;
+    background-image: url('/images/white-bg.jpg');
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/*This is the navigation bar*/
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index: 10;
+}
+
+/*Nicole logo*/
+.logo{
+    font-size: 32px;
+    color: rgb(0, 23, 43);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+/*Navbar decoration and animation*/
+.navbar a{
+    font-size: 20px;
+    color: rgb(0, 23, 43);
+    font-weight: 500;   
+    text-decoration: none;
+    margin-left: 30px;
+}
+
+.navbar a:hover{    
+    color: rgb(103, 122, 138);
+    font-weight: 650;   
+    transition: 0.5s;
+}
+
+/*This is the main content*/
+.info{    
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 15%;
+    text-align: center;
+    display: block;
+ }
+
+.info h1 {
+    font-size: 80px;
+    font-weight: 550;
+    color: rgb(0, 23, 43);
+    line-height: 1.2;
+ }
+
+ .info b {
+    font-size: 80px;
+    font-weight: 800;
+    color: rgb(0, 23, 43);
+    line-height: 1.2;
+    transition: 0.5s;
+ }
+
+ .info b:hover {
+    font-size: 80px;
+    font-weight: 800;
+    color: rgb(0, 60, 111);
+    line-height: 1.2;
+ }
+
+.info p {
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(0, 23, 43);
+    line-height: 1.2;
+ }
+
+.info input{
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 23, 43);
+    transition: 0.5s;
+ }
+
+ .info input:hover{
+    padding: 15px 30px;
+    border-radius: 10px;
+    margin-top: 25px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 23, 43);
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.about-me{
+    margin-top: 10%;
+    display: inline-block;
+    min-width: 100%;
+}
+
+.picture{   
+    width: 60%;
+    height: 700px;
+    display: inline;
+}
+
+.vid {
+    width: 50%;
+    height: 700px;
+    object-fit:cover;
+}
+
+.text{
+    margin-top: 0px;
+    margin-right: 5%;
+    width: 40%;
+    height: 800px;
+    display: block;
+    color: rgb(0, 23, 43);
+    float: right;
+}
+
+#facts {
+    font-size: 40px;
+    font-weight: 800;
+    line-height: 2;
+    color: rgb(0, 23, 43);
+}
+
+.text li{
+    font-size: 20px;
+    font-weight: 450;
+    line-height: 1.5;
+    color: rgb(0, 23, 43);
+}
+
+#blue {
+    color: rgb(0, 60, 111);
+    font-weight: 650;
+}
+
+#links {
+    color: rgb(12, 0, 81);
+    font-weight: 650;
+    text-decoration: none;
+    transition: 0.2s ease-in;
+}
+
+#links:hover {
+    color: rgb(0, 179, 176);
+    font-weight: 700;
+}
+
+/*This is the footer*/
+.footer {
+    margin-top: 5%;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 1.2;
+    padding: 3%;
+    float: bottom;
+    background-color: rgb(0, 23, 43);
+}
+
+/*This is the gallery.html*/
+.art{
+    margin-top: 8%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(0, 23, 43);
+    line-height: 1.2;
+}
+
+.draw{
+    margin-top: 2%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 800;
+    color: rgb(0, 23, 43);
+    line-height: 1.2;
+}
+
+.draw img{
+    width: 30%;
+    height: 450px;
+    object-fit:cover;
+    border-radius: 30px;
+    transition: 0.2s ease-in-out;
+    margin-left: 1%;
+}
+
+.draw img:hover{
+    border-radius: 30px;
+    box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+/*This is the music.html*/
+.music{ 
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(0, 23, 43);
+    line-height: 1.2;
+}
+
+.music table{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 400px;
+    border: 3px solid rgb(0, 23, 43);
+    border-collapse: collapse;
+}
+
+.music table th{
+    border: 3px solid rgb(0, 23, 43);
+    padding: 5px;
+    background-color: rgb(0, 23, 43);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 600;
+}
+
+.music table td{
+    border: 3px solid rgb(0, 23, 43);
+    padding: 5px;
+    color: rgb(0, 23, 43);
+    font-size: 30px;
+    font-weight: 500;
+}
