@@ -8,7 +8,7 @@
 
     <title>Nicole Clemente</title>
 
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="css/index.css">
 
   </head>
 
@@ -38,9 +38,10 @@
             <video muted loop autoplay class="vid">
                 <source src="nicole.mp4" type="video/mp4">
                 Your browser does not support the video tag.
-              </video>    
+              </video>   
+              
         </div>
-
+        
         <div class="text">
             <p id="facts">10 facts about me</p>
             <ul>
@@ -80,8 +81,9 @@
               </li>
               <li>
                 <p>
-                  My favorite food consists of <span id="blue">KFC chicken, spaghetti, nuggets, steak, french fries</span>, and lastly my mom's
-                  cooking, <span id="blue">Nilaga</span>.
+                  <!--intext citation here-->
+                  My favorite food consists of <span style="font-weight: bold;">KFC chicken, spaghetti, nuggets, steak, french fries</span>, and lastly my mom's
+                  cooking, <span style="font-weight: bold;">Nilaga</span>.
                 </p>
               </li>
               <li>
@@ -103,6 +105,28 @@
               </li>
             </ul>
        </div>
+      </div>
+
+      <div class="deco">
+        <center>
+       <p id="fit">
+        If you have any messages, comment down below!
+       </p>
+      </center>
+       <div class="rating">
+        <form action="/submit_form" method="POST">
+          <label for="name">Name:</label>
+          <input type="text" class="deco_input" id="name" name="name" placeholder="John Doe">
+        
+           <label for="email">Email:</label>
+           <input type="email" class="deco_input" id="email" name="email" placeholder="johndoe123@email.com">
+        
+           <label for="message">Message:</label><br>
+                <textarea class="deco_input" id="message" name="message" placeholder="Type your comments here"></textarea>
+                  <input class="sub" type="submit" value="Send">
+        </form>
+        </div>
+      </div>
 
        <div class="footer">
         <p>Nicole Clemente</p>

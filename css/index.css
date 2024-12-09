@@ -1,17 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=DM+Serif+Display:ital@0;1&family=Rufina:wght@400;700&display=swap');
 
-*{
+*{  
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
+    
+    /*outline: solid #f00 1px !important;*/
 }
 
 body{
     min-height: 700px;
-    background-image: url('white-bg.jpg');
+    width: 100%;
+    background-image: url('/images/white-bg.jpg');
     background-repeat: repeat;
-    background-size: cover;
+    background-size: auto;
     background-position: center;
 }
 
@@ -52,11 +55,36 @@ body{
     transition: 0.5s;
 }
 
+/*This is the contact content*/
+.con{    
+    margin-left: 30%;
+    margin-right: 20%; 
+    margin-top: 13%;
+    text-align: center;
+    display: block;
+ }
+
+.con h1 {
+    font-size: 80px;
+    font-weight: 550;
+    color: rgb(0, 23, 43);
+    line-height: 1.2;
+    text-align: left;
+ }
+
+ .con p {
+    font-size: 35px;
+    font-weight: 500;
+    color: rgb(0, 23, 43);
+    line-height: 1.2;
+    text-align: left;
+ }
+
 /*This is the main content*/
 .info{    
     margin-left: 20%;
-    margin-right: 20%;
-    margin-top: 15%;
+    margin-right: 20%; 
+    margin-top: 13%;
     text-align: center;
     display: block;
  }
@@ -119,9 +147,13 @@ body{
 
 .about-me{
     margin-top: 10%;
-    display: inline-block;
+    display: block;
     min-width: 100%;
+    height: 750px;
+    overflow: hidden;
+    
 }
+
 
 .picture{   
     width: 60%;
@@ -131,7 +163,8 @@ body{
 
 .vid {
     width: 50%;
-    height: 700px;
+    height: 800px;
+    overflow: hidden;
     object-fit:cover;
 }
 
@@ -149,6 +182,7 @@ body{
     font-size: 40px;
     font-weight: 800;
     line-height: 2;
+    overflow-y: hidden;
     color: rgb(0, 23, 43);
 }
 
@@ -157,11 +191,6 @@ body{
     font-weight: 450;
     line-height: 1.5;
     color: rgb(0, 23, 43);
-}
-
-#blue {
-    color: rgb(0, 60, 111);
-    font-weight: 650;
 }
 
 #links {
@@ -222,6 +251,22 @@ body{
     box-shadow: 0 8px 10px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
 
+.galvid{
+    align-items: center;
+    margin-top: 4%;
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 5%;
+    overflow: hidden;
+}
+
+.galvid video{
+    width: 100%;
+    height: 5%;
+    border-radius: 30px;
+}
+
+
 /*This is the music.html*/
 .music{ 
     margin-left: 10%;
@@ -258,5 +303,121 @@ body{
     padding: 5px;
     color: rgb(0, 23, 43);
     font-size: 30px;
+    font-weight: 500;
+}
+
+/*This is the forms*/
+.rating {
+    font-weight: 500;
+    color: aliceblue;
+    background-color: rgb(0, 23, 43);
+    border: transparent;
+    border-radius: 20px;
+    margin: auto;
+    width: 50%;
+    padding: 30px;
+}
+
+textarea {
+    margin-top: 7px;
+    width: 100%;
+    resize: vertical;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 10px;
+    border: transparent;
+    border-radius: 10px;
+ }
+
+input.deco_input {
+    width: 100%;
+    padding: 10px 10px;
+    margin: 8px 0;
+    border: transparent;
+    border-radius: 10px;
+}
+
+.sub{
+    width: auto;
+    padding: 15px 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 23, 43);
+    background: rgb(255, 255, 255);
+    transition: 0.3s;
+    display: block;
+    margin: 10px auto;
+    margin-top: 25px;
+ }
+
+.sub:hover{
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    background: rgb(0, 60, 111);
+    cursor: pointer;
+}
+ 
+.deco{
+        align-items: center;
+        display:inline-block;
+        justify-content: center;
+        width: 100%;
+        margin: 15px;
+        margin-top: 50px;
+        font-size: 33px;
+        font-weight: 500;
+        color: rgb(0, 23, 43);
+        line-height: 1.2;
+}
+
+.rating label{
+    font-size: 25px;
+}
+
+#fit {
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+/*This is the schedule in contact.html*/
+.sched{ 
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 5%;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(0, 23, 43);
+    line-height: 1.5;
+}
+
+.sched table{
+    margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+    height: 400px;
+    border: 3px solid rgb(0, 23, 43);
+    border-collapse: collapse;
+}
+
+.sched table th{
+    border: 3px solid rgb(0, 23, 43);
+    padding: 5px;
+    background-color: rgb(0, 23, 43);
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 2;
+}
+
+.sched table td{
+    border: 3px solid rgb(0, 23, 43);
+    padding: 15px;
+    color: rgb(0, 23, 43);
+    font-size: 25px;
     font-weight: 500;
 }
